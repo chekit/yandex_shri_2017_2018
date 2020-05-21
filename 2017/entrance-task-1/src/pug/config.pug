@@ -1,0 +1,1412 @@
+block config
+- var pageTitle = 'Яндекс "Мобилизация"'
+//- Нужно имена школ положить в отдельный массив
+//- а занятия в другой
+- 
+  var october = [
+    {
+      name: 'Октябрь',
+      prefix: 'october',
+      days: [
+        {
+          date: {
+            value: 18,
+            id: 1
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: 'https://events.yandex.ru/lib/talks/4158/',
+                    title: 'Лекция 1. Идея, исследование, концепт (Часть 1)',
+                    authors: [
+                      {
+                        name: 'Антон тен',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: 'https://events.yandex.ru/lib/talks/4159/',
+                    title: 'Лекция 2. Идея, исследование, концепт (Часть 2)',
+                    authors: [
+                      {
+                        name: 'Антон тен',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 19,
+            id: 2
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: 'https://events.yandex.ru/lib/talks/4160/',
+                    title: 'Лекция 1. Java Blitz (Часть 1)',
+                    authors: [
+                      {
+                        name: 'Эдуард Мацуков',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: 'https://events.yandex.ru/lib/talks/4161/',
+                    title: 'Лекция 2. Git & Workflow',
+                    authors: [
+                      {
+                        name: 'Дмитрий Складнов',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 20,
+            id: 3
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: 'https://events.yandex.ru/lib/talks/4162/',
+                    title: 'Лекция 1. Адаптивная вёрстка',
+                    authors: [
+                      {
+                        name: 'Дмитрий Душкин',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 25,
+            id: 3
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 3. Особенности проектирования мобильных интерфейсов',
+                    authors: [
+                      {
+                        name: 'Васюнин Николай',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 27,
+            id: 5
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 2. Работа с сенсорным пользовательским',
+                    authors: [
+                      {
+                        name: 'Дмитрий Душкин',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ];
+
+- 
+  var november = [
+    {
+      name: 'Ноябрь',
+      prefix: 'november',
+      days: [
+        {
+          date: {
+            value: 1,
+            id: 1
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 4. Продукт и платформа',
+                    authors: [
+                      {
+                        name: 'Сергей Калабин',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 5. Природа операционных систем',
+                    authors: [
+                      {
+                        name: 'Васюнин Николай',
+                        img: '',
+                        bio: ''
+                     }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 2,
+            id: 2
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 5. MyFirstApp (Часть 2)',
+                    authors: [
+                      {
+                        name: 'Роман Григорьев',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 6. ViewGroup',
+                    authors: [
+                      {
+                        name: 'Алексей Щербинин',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 3,
+            id: 3
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 3. Мультимедиа: возможности браузера',
+                    authors: [
+                      {
+                        name: 'Максим Васильев',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 8,
+            id: 1
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 6. Прототипирование как процесс',
+                    authors: [
+                      {
+                        name: 'Сергей Томилов',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 7. Инструмент под задачи',
+                    authors: [
+                      {
+                        name: 'Сергей Томилов',
+                        img: '',
+                        bio: ''
+                      },
+                      {
+                        name: 'Дарья Старицына',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 9,
+            id: 2
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 7. Background',
+                    authors: [
+                      {
+                        name: 'Алексей Макаров',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 8. RecyclerView',
+                    authors: [
+                      {
+                        name: 'Владимир Тагаков',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 10,
+            id: 3
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 4. Нативные приложения на веб-технологиях',
+                    authors: [
+                      {
+                        name: 'Сергей Бережной',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 15,
+            id: 1
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Дополнительная лекция. Design Everything',
+                    authors: [
+                      {
+                        name: 'Rijshouwer Krijn',
+                        img: '',
+                        bio: ''
+                      },
+                      {
+                        name: 'Treub Jonas',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                } 
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 8. Анимации',
+                    authors: [
+                      {
+                        name: 'Сергей Томилов',
+                        img: '',
+                        bio: ''
+                      },
+                      {
+                        name: 'Дарья Старицына',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Дополнительная лекция. Design Everything',
+                    authors: [
+                      {
+                        name: 'Rijshouwer Krijn',
+                        img: '',
+                        bio: ''
+                      },
+                      {
+                        name: 'Treub Jonas',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }             
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 16,
+            id: 2
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 9. Service &amp; Broadcasts',
+                    authors: [
+                      {
+                        name: 'Алексей Макаров',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 10. Drawing',
+                    authors: [
+                      {
+                        name: 'Алексей Щербинин'
+                      }
+                    ]
+                  }
+                }                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 17,
+            id: 3
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 5. Клиентская оптимизация: базовые знания и лучшие практики',
+                    authors: [
+                      {
+                        name: 'Андрей Морозов',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 23,
+            id: 1
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 9. Развите продукта',
+                    authors: [
+                      {
+                        name: 'Андрей Гевак',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }, 
+                {time: '20.00'}                            
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 24,
+            id: 2
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 11. Content provider',
+                    authors: [
+                      {
+                        name: 'Максим Хромцов',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 12. SQL&amp;SQLite',
+                    authors: [
+                      {
+                        name: 'Максим Хромцов',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 25,
+            id: 3
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 6. Клиентская оптимизация: мобильные устройства и инструменты',
+                    authors: [
+                      {
+                        name: 'Иван Карев',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }, 
+                {time: '20.00'}                           
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 29,
+            id: 1
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 10. Исследование интерфейсов',
+                    authors: [
+                      {
+                        name: 'Кондратьев Александр',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }, 
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 30,
+            id: 2
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 13. Fragments (Часть 1)',
+                    authors: [
+                      {
+                        name: 'Денис Загаевский',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 14. Fragments (Часть 2)',
+                    authors: [
+                      {
+                        name: 'Денис Загаевский',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }   
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ];
+
+- 
+  var december = [
+    {
+      name: 'Декабрь',
+      prefix: 'december',
+      days: [
+        {
+          date: {
+            value: 1,
+            id: 1
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 7. Инфраструктура веб-проектов',
+                    authors: [
+                      {
+                        name: 'Прокопюк Андрей',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {
+                  time: '20.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 8. Инструменты разработки мобильного фронтенда',
+                    authors: [
+                      {
+                        name: 'Прокопюк Андрей',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 7. Инфраструктура веб-проектов',
+                    authors: [
+                      {
+                        name: 'Прокопюк Андрей',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 6,
+            id: 1
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 11. Работа в команде',
+                    authors: [
+                      {
+                        name: 'Юрий Подорожный',
+                        bio: '',
+                        img: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 7,
+            id: 2
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 15. MVP&amp;Co',
+                    authors: [
+                      {
+                        name: 'Дмитрий Попов',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 13,
+            id: 1
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Дополнительная лекция. Айдентика',
+                    authors: [
+                      {
+                        name: 'Дмитрий Моруз',
+                        img: '',
+                        bio: ''
+                      }, 
+                      {
+                        name: 'Ждан Филиппов',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Дополнительная лекция. Айдентика',
+                    authors: [
+                      {
+                        name: 'Дмитрий Моруз',
+                        img: '',
+                        bio: ''
+                      }, 
+                      {
+                        name: 'Ждан Филиппов',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Дополнительная лекция. Айдентика',
+                    authors: [
+                      {
+                        name: 'Дмитрий Моруз',
+                        img: '',
+                        bio: ''
+                      }, 
+                      {
+                        name: 'Ждан Филиппов',
+                        img: '',
+                        bio: ''
+                      }
+                    ]                  }
+                },
+                {time: '20.00'}
+              ]
+            }
+          ]
+        },
+        {
+          date: {
+            value: 14,
+            id: 2
+          },
+          schools: [
+            {
+              id: 1,
+              name: 'Школа разработки интерфейсов',
+              prefix: 'interface',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 2,
+              name: 'Школа мобильной разработки',
+              prefix: 'mobile',
+              schedule: [
+                {
+                  time: '19.00',
+                  theme: {
+                    isdone: false,
+                    title: 'Лекция 16. Debugging &amp; Polishing',
+                    authors: [
+                      {
+                        name: 'Илья Сергеев',
+                        img: '',
+                        bio: ''
+                      }
+                    ]
+                  }
+                },
+                {time: '20.00'}
+              ]
+            },
+            {
+              id: 3,
+              name: 'Школа мобильного дизайна',
+              prefix: 'design',
+              schedule: [
+                {time: '19.00'},
+                {time: '20.00'}                
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ];

@@ -1,0 +1,14 @@
+.header {
+  &__sub-title {
+    margin: 0;
+    color: #898989;
+    font-size: (18 / 2) * .1rem;
+    font-weight: normal;
+    text-transform: lowercase;
+    line-height: 1;
+
+    @media screen and (min-width: 720px) {
+      font-size: 2.4rem;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "minify": true,
+  "options": [
+    "html5shiv",
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/svg",
+    "test/css/flexbox",
+    "test/css/vhunit",
+    "test/css/vmaxunit",
+    "test/css/vminunit",
+    "test/css/objectfit"
+  ]
+}

@@ -1,0 +1,8 @@
+.add-contact-btn {
+	background-color: #e258ab;
+
+	&:hover,
+	&:active {
+		background-color: darken(#e258ab, 5%) !important;	
+	}
+}

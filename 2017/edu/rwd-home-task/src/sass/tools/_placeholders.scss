@@ -1,0 +1,17 @@
+%inner-wrapper {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 1em;
+	min-width: 320px;
+	max-width: 1200px;
+
+	@include bp('tablet-vertical') {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	@include bp('desktop') {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}

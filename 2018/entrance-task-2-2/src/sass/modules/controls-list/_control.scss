@@ -1,0 +1,249 @@
+.control {
+	$self: &;
+
+	flex-shrink: 0;
+	position: relative;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 0 20px 0 0;
+	width: $m_control_width;
+	height: 100px;
+	background: #F7F7F7;
+	border-radius: 20px;
+	box-shadow: 0 2px 6px 0 rgba(197,186,186,0);
+	transition: background-color, box-shadow, top, left .25s ease-in-out;
+	cursor: pointer;
+
+	&:first-child {
+		margin-left: 20px;
+	}
+
+	@media screen and (min-width: 1024px) {
+		margin: 0 0 20px;
+	}
+	
+	&:hover {
+		background-color: #fff;
+		box-shadow: 0 2px 6px 0 rgba(197,186,186,0.50);
+	}
+	
+	.primary & {
+		margin: 0 0 0 20px;
+		height: 120px;
+
+		@media screen and (min-width: 1024px) {
+			margin: 0 0 20px;
+
+			&:first-child {
+				margin-top: 20px;
+			}
+		}
+	}
+
+	.scripts & {
+		@media screen and (min-width: 1024px) {
+			margin: 0;
+		}
+	}
+
+	.devices & {
+		@media screen and (min-width: 1024px) {
+			margin: 0 20px 0 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}		
+	}
+
+	&--full {
+		position: fixed;
+		top: 20px;
+		right: 0;
+		left: 0;
+		z-index: 1000;
+		margin: auto !important; /* beat primary */
+		padding: $m_primary_padding_mob;
+		width: (334 / 375) * 100%;
+		min-height: calc(100vh - 20px - 60px * 2 - 10px - 2 * 20px); /* 100vh - manage-margin-top - 2 * button_height - button_margin_ottom - 2 * padding_tb */
+		background-color: #fff;
+		cursor: default;
+
+		&:hover {
+			box-shadow: none;
+		}
+
+		@media screen and (min-width: 1024px) {
+			top: 0;
+			bottom: auto;
+			transform: translate(0, 50%);
+			width: 630px;
+			height: auto !important; /* beat primary */
+			min-height: 210px;	
+			padding: $m_primary_padding_mob + 10px;
+		}
+	}
+
+	&__body {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+
+		#{$self}--full & {
+			pointer-events: all;
+		}
+	}
+
+	&__content {
+		#{$self}--full & {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+	}
+
+	&__icon {
+		#{$self}--full & {
+			display: none;
+
+			@media screen and (min-width: 1024px) {
+				display: flex;
+				align-items: center;
+				position: absolute;
+				right: $m_primary_padding_mob + 10px;
+
+				& .icon {
+					width: 48px;
+					height: 48px;	
+				}
+			}
+		}
+
+		&-value {
+			display: none;
+			margin: 0;
+
+			#{$self}--full & {
+				@media screen and (min-width: 1024px) {
+					display: block;
+					font-size: 3.6rem;
+					font-weight: bold;
+					line-height: (42 / 36);
+				}				
+			}
+		}
+	}
+
+	&__settings {
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+		display: none;
+
+		#{$self}--full & {
+			display: flex;
+		}
+
+		&#{$self}__settings--left {
+			justify-content: flex-start;
+		}
+	}
+
+	&__manage {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		margin-top: 20px;
+		width: 100%;
+
+		#{$self}--full & {
+			display: block;
+
+			@media screen and (min-width: 1024px) {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+
+	}
+
+	&__title {
+		margin: 0 0 .4em;
+		color: #333333;
+		font-size: 1.4rem;
+		font-weight: bold;
+		line-height: (16 / 14);
+		letter-spacing: 0;
+
+		#{$self}--full & {
+			font-size: 1.8rem;
+			line-height: (21 / 18);
+			
+			@media screen and (min-width: 1024px) {
+				font-size: 2.7rem;
+				line-height: (31 / 27);
+			}
+		}	
+	}
+
+	&__subtitle {
+		margin: 0;
+		color: #858585;
+		font-size: 1.2rem;
+		line-height: (14 / 12);
+		letter-spacing: 0.01px;
+
+		#{$self}--full & {
+			color: #333;
+			
+			@media screen and (min-width: 1024px) {
+				font-size: 1.4rem;
+				line-height: (16 / 14);
+			}
+		}	
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 10px;
+		width: 100%;
+		background-color: #fff;
+		height: 60px;
+		border: none;
+		border-radius: $m_block_radius_mob;
+		font-size: 1.8rem;
+		font-weight: bold;
+		line-height: (21 / 18);
+		outline: none;
+		transition: all .15s ease-in-out;
+		cursor: pointer;
+
+		@media screen and (min-width: 1024px) {
+			margin: 0;
+			width: 307px;
+		}
+
+		&:last-child {
+			margin: 0;
+		}
+
+		&:active {
+			background-color: darken(#fff, 15%);
+		}
+
+		&--ok {
+			background-color: $c_button_ok;
+
+			&:active {
+				background-color: darken($c_button_ok, 15%);
+			}
+		}
+	}
+}

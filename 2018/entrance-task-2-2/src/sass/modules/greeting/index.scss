@@ -1,0 +1,28 @@
+.greeting {
+	color: #333333;
+
+	&__name {
+		margin: 0 0 .6em;
+		font-size: 1.8rem;
+		font-weight: bold;
+		line-height: (21 / 18);
+
+		@media screen and (min-width: 1024px) {
+			grid-column: 1 / 1;
+			grid-row: 1 / 1;
+			font-size: 2.7rem;
+			line-height: (31 / 27);
+		}
+	}
+
+	&__status {
+		margin: 0 0 .6em;
+		font-size: 1.2rem;
+		line-height: (14 / 12);
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.4rem;
+			line-height: (14 / 16);
+		}
+	}
+}

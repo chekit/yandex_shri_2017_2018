@@ -1,0 +1,45 @@
+.lection {
+  &__author {
+    position: relative;
+    display: block;
+    padding: 0 0 2px;
+    margin: 0 0 1em 30px;
+    width: auto;
+    background-color: transparent;
+    border: none;
+    color: #b1b1b1;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    transition: all .15s ease-in-out;
+
+    @media screen and (min-width: 720px) {
+      display: inline-block;
+    }
+
+    a {
+      border-bottom: 1px dotted #b1b1b1 ;
+      color: inherit;
+      outline: none;
+      text-decoration: none;
+
+      & + a {
+        margin-left: 5px;
+      }
+
+      &:hover {
+        border-bottom-color: #585858;
+        color: #585858;
+      }
+    }
+
+
+    &:before {
+      @extend %lection-icon;
+
+      height: 19px;
+      background-position: 50% -16px;
+
+      content: '';
+    }
+  }
+}

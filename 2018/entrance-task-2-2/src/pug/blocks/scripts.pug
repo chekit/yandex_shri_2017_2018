@@ -1,0 +1,28 @@
+block settings 
+	- var controls = [];
+	- controls.push({ type: 'LIGHT', enabled: true, title: 'Выключить весь свет в доме и во дворе'})
+	- controls.push({ type: 'SCHEDULE', enabled: false, title: 'Я ухожу'})
+	- controls.push({ type: 'LIGHT', enabled: true, title: 'Включить свет в коридоре'})
+	- controls.push({ type: 'TEMPERATURE', enabled: true, title: 'Набрать горячую ванну', subtitle: 'Начнётся в 18:00'})
+	- controls.push({ type: 'TEMPERATURE', enabled: true, title: 'Сделать пол тёплым во всей квартире'})
+
+	- var buttons = [];
+	- buttons.push(['arrow-left', 'buttons', 'Назад', ['icon--arrow-left']])
+	- buttons.push(['arrow-right', 'buttons', 'Вперёд', ['icon--arrow-right']])
+
+	- var buttonsClassNames =  [['arrow-left'], ['arrow-right']]
+
+	- var title = 'Избранные сценарии'
+	- var className = 'scripts'
+
+div&attributes({
+	class: className
+})
+	div&attributes({
+		class: `${className}__header`
+	})
+		block header
+			h2&attributes({
+				class: `${className}__title`
+			})!=title
+	+controls-list(controls, buttons, buttonsClassNames)

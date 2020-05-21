@@ -1,0 +1,58 @@
+$base-gutter: 6px;
+
+.add-card {
+	.label {
+		color: #ccc;
+		font-size: $base-gutter * 3;
+		transition: color .25s ease-in-out;
+	}
+	
+	.icon {
+		margin-right: $base-gutter;
+		width: $base-gutter * 4;
+	}
+	
+	.item-input-has-focus {
+		.label {
+			color: darken(#ccc, 50%);
+		}
+	}
+
+	&__set-meeting-point {
+		.icon {
+			text-align: left !important;
+			color: #ccc;
+		}
+
+		&.button {
+			.icon {
+				color: white;
+			}
+		}
+	}
+
+	&__photo {
+		position: relative;
+	}
+
+	&__remove-photo-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0;	
+		padding: 0;
+		width: 30px;
+		background-color: #adadad;
+		box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+		
+		.add-card & {
+			height: 30px;
+			font-size: $base-gutter * 2;
+		}
+
+		.icon {
+			margin: 0;			
+			padding: 0;
+		}
+	}
+}

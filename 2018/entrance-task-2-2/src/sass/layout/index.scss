@@ -1,0 +1,26 @@
+@import './main';
+@import './primary';
+@import './scripts';
+@import './devices';
+
+.wrapper {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-row-gap: 20px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 100%;
+	min-height: 100vh;
+	min-width: 320px;
+	max-width: 1367px;
+	transition: transform .25s ease-in-out;
+
+	&.js-show-menu, 
+	.js-show-menu & {
+		transform: translate3d(-1 * $m_menu_mob_width, 0, 0);
+	}
+
+	@media screen and (min-width: 1024px) {
+
+	}
+}

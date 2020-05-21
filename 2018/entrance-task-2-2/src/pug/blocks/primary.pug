@@ -1,0 +1,16 @@
+- var controls = [];
+- controls.push({ enabled: false, type: 'TEMPERATURE', title: 'Philips Cooler', subtitle: 'Начнет охлаждать в 16:30' });
+- controls.push({ enabled: false, type: 'LIGHT', title: 'Xiaomi Yeelight LED Smart Bulb', subtitle: 'Включится в 17:00' });
+- controls.push({ enabled: false, type: 'TEMPERATURE', title: 'Elgato Eve Degree Connected', subtitle: 'Включится в 19:00' });
+
+- var buttons = [];
+- buttons.push(['arrow-up', 'buttons', 'Вверх', ['icon--arrow-up']])
+
+- var buttonsClassNames = []
+- buttonsClassNames.push('is-active')
+
+.primary
+	include ../components/greeting/index
+	include ../components/weather/index
+	
+	+controls-list(controls, buttons, buttonsClassNames)

@@ -1,0 +1,12 @@
+{
+  "paths": {
+    "src":   "./src/",
+    "build": "./dist/",
+    
+    "sass":  "./src/sass/",
+    "css":   "./dist/css/",
+    
+    "pug":   "./src/pug/",
+    "html":  "./dist/"
+  }
+}

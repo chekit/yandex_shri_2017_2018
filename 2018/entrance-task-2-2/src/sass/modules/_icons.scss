@@ -1,0 +1,62 @@
+.icon {
+	display: block;
+	width: 100%;
+	height: auto;
+
+	&--cloud-drizzle {
+		width: 20px;
+		height: 20px;	
+
+		@media screen and (min-width: 1024px) {
+			width: 26px;
+			height: 26px;
+		}
+	}
+
+	&--temperature {
+		width: 24px;
+		height: 24px;
+	}
+
+	&--sun {
+		width: 24px;
+		height: 24px;
+	}
+
+	&--scheduled {
+		width: 20px;
+		height: 20px;	
+
+		@media screen and (min-width: 1024px) {
+			width: 24px;
+			height: 24px;
+		}
+	}	
+
+	&--arrow-up {
+		width: 16px;
+		height: 16px;
+	}
+
+	&--arrow-left,
+	&--arrow-right {
+		width: 9px;
+		height: 14px;
+	}
+
+	&--arrow-down {
+		width: 10px;
+		height: 5px;
+	}	
+
+	&--knob {
+		width: 12px;
+		height: 8px;
+	}
+
+	&--sun-max, 
+	&--sun-min {
+		width: 36px;
+		height: 36px;
+	}
+}

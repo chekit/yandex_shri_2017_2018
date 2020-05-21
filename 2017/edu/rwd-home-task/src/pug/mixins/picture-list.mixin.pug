@@ -1,0 +1,12 @@
+mixin picture_list(list)
+	.picture-list
+		//- .picture-list__wrapper
+		each picture in list
+			.picture-list__item.picture
+				a.picture__link.js-preview-link&attributes({
+					href: `images/${picture.filename}.big.png`,
+					'data-title': picture.title
+				})
+				//- picture
+				img.picture__image(src=`images/${picture.filename}.png`, alt=`${picture.title}`)
+				p.picture__title!=picture.title

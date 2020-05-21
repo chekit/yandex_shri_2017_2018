@@ -1,0 +1,32 @@
+.picture-list {
+	margin: 0 1em;
+
+	@include bp('tablet-vertical') {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		margin-bottom: 1.5em;
+		width: 100%;
+
+		@include bp('tablet-vertical') {
+			flex-wrap: wrap;
+			flex: 1 1 calc((100vw - 2em * 2) / 6);
+			margin: 0 1em 1.5em 0;
+			width: auto;
+			height: 300px;
+
+			&:nth-child(7n - 6) {
+				flex-grow: 0;
+				flex-basis: 550px;
+			}
+
+			&:nth-child(7n + 4) {
+				flex-grow: 0;
+				flex-basis: 460px;
+			}
+		}		
+	}
+}

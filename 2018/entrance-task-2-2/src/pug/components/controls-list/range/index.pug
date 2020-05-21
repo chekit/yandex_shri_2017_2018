@@ -1,0 +1,20 @@
+//- mod = 'warm' | 'degree'
+
+mixin range(mod)
+	div&attributes({
+		class: ['range', `range--${mod}`]
+	})
+		input.range__native(type="range", id="range-native", name="range-native")
+		.range__styled
+			.range__control(style=`transform: translateX(${(336 - 60) - ((336 - 60)* 0.35) }px)`)
+			.range__line
+				.range__line-bottom
+					if mod === 'warm'
+						+icon('icon_sun_min', 'controls', 'Минимум', 'icon--sun-min')
+					if mod === 'degree'
+						span.range__degree -10
+				.range__line-top
+					if mod === 'warm'
+						+icon('icon_sun_max', 'controls', 'Максимум', 'icon--sun-min')
+					if mod === 'degree'
+						span.range__degree +30

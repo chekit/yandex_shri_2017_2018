@@ -1,0 +1,25 @@
+.month {
+  margin: 0 auto;
+  padding: ((36 / 2) * 1px) 0 0;
+  width: (300/320) * 100%;
+
+   @media screen and (min-width: 720px) {
+     padding-top: 36px;
+   }
+
+  &--october {
+    @extend .month;
+  }
+
+  &--november {
+    @extend .month;
+  }
+
+  &--december {
+    @extend .month;
+  }
+}
+
+@import 'month/name';
+@import 'month/day';
+

@@ -1,0 +1,98 @@
+<ion-header>
+	<ion-navbar color="light">
+	  <ion-title>Add Card</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content padding class="add-card">
+	<ion-grid>
+		<ion-row>
+			<ion-col col-6>
+				<button (click)="takePhoto()" ion-button block icon-left>
+					<ion-icon name="md-camera"></ion-icon>
+					Take Photo
+				</button>
+			</ion-col>
+			<ion-col col-6>
+				<button (click)="addPhoto()" ion-button block icon-left>
+					<ion-icon name="md-images"></ion-icon>
+					Add Photo
+				</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<ion-list inset>
+		<ion-item class="add-card__photo" *ngIf="model.img">
+			<button class="add-card__remove-photo-btn" color="dark" (click)="removePhoto()" ion-button round icon-only>
+				<ion-icon name="md-trash"></ion-icon>
+			</button>
+			 <img [src]="model.img" alt="contact photo"> 
+		</ion-item>
+		<ion-item>
+			<ion-label>
+				<ion-icon name="md-contact"></ion-icon>
+				Name
+			</ion-label>
+			<ion-input type="text" [(ngModel)]="model.name" name="name"></ion-input>
+		</ion-item>
+	
+		<ion-item>
+			<ion-label>
+				<ion-icon name="md-briefcase"></ion-icon>
+				Job
+			</ion-label>
+			<ion-input type="text" [(ngModel)]="model.position" name="position"></ion-input>
+		</ion-item>
+		<!-- <ion-item [hidden]="!model.place">  -->
+		<ion-item [hidden]="!model.place">
+			<ion-label>
+				<ion-icon name="md-pin"></ion-icon>
+			</ion-label>
+			<ion-input type="text" [(ngModel)]="model.place" name="place"></ion-input> 
+		</ion-item>
+		<button class="add-card__set-meeting-point" [hidden]="model.place" (click)="setMeetingLocation()" ion-button block icon-left>
+			<ion-icon name="md-pin" color="primary" item-content item-start></ion-icon>
+			Set Meeting Location
+		</button> 
+		<ion-item>
+			<ion-label>
+				<ion-icon name="md-phone-portrait"></ion-icon>
+				Phone number
+			</ion-label>
+			<ion-input type="tel" [(ngModel)]="model.contacts.phone" name="phone"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>
+				<ion-icon name="md-mail"></ion-icon>
+				Email
+			</ion-label>
+			<ion-input type="email" [(ngModel)]="model.contacts.email" name="email"></ion-input>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>
+				<ion-icon name="md-globe"></ion-icon>
+				Web
+			</ion-label>
+			<ion-input type="text" [(ngModel)]="model.contacts.web" name="web"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>
+				<ion-icon name="md-chatbubbles"></ion-icon>
+				Comment
+			</ion-label>
+			<ion-input type="text" [(ngModel)]="model.comment" name="comment"></ion-input>
+		</ion-item>
+	</ion-list>
+</ion-content>
+<ion-footer>
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<button color="danger" (click)="cancelAddCard()" ion-button outline>Cancel</button>
+			</ion-col>
+			<ion-col>
+				<button (click)="saveCard()" ion-button block>Save Card</button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-footer>

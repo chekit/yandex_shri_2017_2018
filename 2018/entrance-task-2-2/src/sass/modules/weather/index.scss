@@ -1,0 +1,58 @@
+.weather {
+	display: flex;
+	align-items: center;
+
+	@media screen and (min-width: 1024px) {
+		grid-column: 1 / 1;
+		grid-row: 2 / 2;
+	}
+
+	&__item {
+		margin-right: 5.1%;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
+.conditions {
+	&__point {
+		margin: 0 0 .6em;
+		color: #858585;
+		font-size: 1.2rem;
+		line-height: (14 / 12);
+
+		@media screen and (min-width: 1024px) {
+			font-size: 1.4rem;
+			line-height: (16 / 14);
+		}
+	}
+	
+	&__deg {
+		display: flex;
+		margin: 0;
+		color: #333333;
+		font-size: 2.4rem;
+		font-weight: bold;
+		line-height: (28 / 24);
+		letter-spacing: 0;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 3.6rem;
+			line-height: (42 / 36);
+		}
+	}
+	
+	&__icon {
+		align-self: center;
+		margin: 0 5px;
+
+		.icon {
+			@media screen and (min-width: 1024px) {
+				width: 26px;
+				height: 26px;
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+<div class="cards__item card">
+	<button class="card__delete-btn" (click)="removeCard()" ion-button icon-only round>
+		<ion-icon name="md-trash"></ion-icon>
+	</button>
+	<div class="card__header">
+		<card-image [imgSrc]="content.img" [imgAlt]="content.name"></card-image>
+		<p class="card__name">
+			{{content.name}}
+		</p>
+		<p class="card__position">
+			{{content.position}}
+		</p>
+	</div>
+	<div class="card__place" *ngIf="content.place">
+		<ion-icon name="md-pin"></ion-icon>
+		<p>{{content.place}}</p>
+	</div>
+	<div class="card__info">
+		<div class="card__contacs">
+			<p class="card__phone" *ngIf="content.contacts.phone">
+				<ion-icon name="md-phone-portrait"></ion-icon>
+				{{content.contacts.phone}}
+			</p>
+			<p class="card__email" *ngIf="content.contacts.email">
+				<ion-icon name="md-mail"></ion-icon>
+				{{content.contacts.email}}
+			</p>
+			<p class="card__web" *ngIf="content.contacts.web">
+				<ion-icon name="md-globe"></ion-icon>
+				{{content.contacts.web}}
+			</p>
+		</div>
+		<div class="card__comment"></div>
+		
+	</div>
+	<div class="card__manage">
+		<button (click)="shareCard()" ion-button block icon-left>
+			<ion-icon name="md-share"></ion-icon>
+			Share
+		</button>
+	</div>
+</div>

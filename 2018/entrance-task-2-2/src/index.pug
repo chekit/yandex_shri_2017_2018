@@ -1,0 +1,12 @@
+extends  ./pug/base/template
+
+block content
+  include ./pug/components/header/index
+  main.main
+    include ./pug/blocks/primary
+    include ./pug/blocks/scripts
+    include ./pug/blocks/devices
+  include ./pug/components/footer/index
+
+block scripts
+  script(src="js/scripts.min.js")

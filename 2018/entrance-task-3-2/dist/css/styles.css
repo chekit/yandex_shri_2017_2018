@@ -1,0 +1,38 @@
+a {
+	color: teal;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.count__input {
+	display: block;
+	padding: 0;
+	margin: 0 0 1em;
+	width: 500px;
+	height: 500px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.count__button {
+	width: 150px;
+	height: 50px;
+	background-color: #f3f3f3;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+	font-size: 21px;
+}
+
+#result {
+	display: none;
+}
+
+.result__title {
+	margin: 0 0 1em;
+	font-size: 21px;
+	font-family: arial, sans-serif;
+	line-height: 1;
+}

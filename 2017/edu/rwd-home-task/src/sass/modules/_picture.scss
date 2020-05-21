@@ -1,0 +1,85 @@
+.picture {
+	position: relative;
+	overflow: hidden;
+	background-color: $picture-bg;
+	transition: all .15s ease-in-out;
+
+	@include bp('tablet-vertical') {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			box-shadow: 0 0 5px rgba(0, 0, 0, .45);
+		}		
+	}
+
+	&__link {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		color: $picture-title-color;
+		text-decoration: none;
+		background: rgba(0, 0, 0, .35) url('../images/elements/zoom-in@1x.svg') center center no-repeat;
+		background-size: 0 0;
+		opacity: 0;
+		transition: opacity, background-size .15s ease-in-out;
+
+		@media screen and (min-device-pixel-ratio: 2) {
+			background-image: url('../images/elements/zoom-in@2x.svg');
+		}
+
+		.no-svg & {
+			background-image: url('../images/elements/zoom-in@1x.png');
+
+			@media screen and (min-device-pixel-ratio: 2) {
+				background-image: url('../images/elements/zoom-in@2x.png');
+			}
+		}
+
+		&:hover {
+			opacity: 1;
+			background-size: 40px 40px;
+		}
+	}
+
+	&__image {
+		display: block;
+		width: 100%;
+		height: auto;
+
+		@include bp('tablet-vertical') {
+			width: auto;
+			height: 100%;
+		}
+	}	
+
+	&__title {
+		box-sizing: border-box;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 1;
+    	overflow: hidden;
+		width: 100%;
+		margin: 0;
+		padding: .5em 1em;	
+	    width: 100%;
+		background-color: rgba(241, 241, 241, .67);
+		color: $picture-title-color;
+		font-weight: 600;
+    	text-overflow: ellipsis;
+		white-space: nowrap;
+
+		@include bp('desktop') {
+			color: darken($picture-title-color, 25%);
+			text-shadow: 1px 1px 0 rgba(255, 255, 255, .25)
+		}
+
+		$map: (320px: 16px, 768px: 18px, 1024px: 18px);
+		@include poly-fluid-sizing('font-size', $map);
+	}
+}

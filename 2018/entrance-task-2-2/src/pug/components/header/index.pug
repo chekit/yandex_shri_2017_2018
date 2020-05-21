@@ -1,0 +1,8 @@
+include ./logo/logo
+include ./menu/menu
+
+- var menuLinks = ['Сводка', 'Устройства', 'Сценарии']
+
+header.header
+	+logo('header__logo')
+	+menu('header__menu', menuLinks)

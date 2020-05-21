@@ -1,0 +1,28 @@
+.logo {
+	display: flex;
+	align-items: center;
+	width: 110px;
+	height: 37px;
+
+	@media screen and (min-width: 1024px) {
+		margin-right: 3.6%;
+	}
+
+	&__link {
+		display: block;
+		text-decoration: none;
+		outline: none;
+	}
+
+	img {
+		display: block;
+	}
+}
+
+.red-letter {
+	color: #f00;
+}
+
+.thin-letter {
+	font-weight: 200;
+}

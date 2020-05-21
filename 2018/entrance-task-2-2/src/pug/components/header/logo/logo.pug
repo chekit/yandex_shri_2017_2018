@@ -1,0 +1,10 @@
+mixin logo(className = '')
+	div&attributes({
+		class: ['logo', className]
+	})
+		a.logo__link(href="#")
+			img&attributes({
+				srcset: 'images/logo/yandex_home.svg, images/logo/yandex_home@2x.png 2x',
+				src: "images/logo/yandex_home@1x.png",
+				alt: "Яндекс Дом"
+			})

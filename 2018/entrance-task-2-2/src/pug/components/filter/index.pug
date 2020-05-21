@@ -1,0 +1,21 @@
+- var filterIDs = {};
+
+mixin filter(elements = [], all = true)
+	if elements.length > 0
+		.filters&attributes({
+			class: !all ? 'filters--linear' : ''
+		})
+			if all
+				button.filters__curent-type.js-show-list 
+					span.text Все
+					+icon('arrow-down', 'buttons', 'Развернуть', ['icon--arrow-down'])
+			ul.filters-list
+				if all
+					li.filters-list__item
+						button#js-filter-all.filters__button.is-active Все
+				each item, index in elements
+					li.filters-list__item
+						if index === 0 && !all
+							button(class="filters__button is-active")!= item
+						else
+							button(class="filters__button")!= item

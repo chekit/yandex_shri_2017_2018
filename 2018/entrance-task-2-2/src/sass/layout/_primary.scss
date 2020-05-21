@@ -1,0 +1,26 @@
+.primary {
+	display: grid;
+	grid-template-rows: auto auto 1fr;
+	grid-row-gap: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: $m_primary_padding_mob;
+	width: 100%;
+	max-width: 630px;
+	min-height: 282px;
+	max-height: 331px;
+	background: transparent url('../images/primary/bg@2x.png') left top no-repeat;
+	background-size: cover;
+	border-radius: $m_block_radius_mob;
+	
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+		background-image: url('../images/primary/bg@2x.png');
+	}
+	
+	@media screen and (min-width: 1024px) {
+		grid-column: 1;
+		grid-template-columns: 1fr $m_control_width;
+		grid-column-gap: 10px;
+	}
+}

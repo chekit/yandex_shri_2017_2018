@@ -1,0 +1,24 @@
+.school {
+  &__time {
+    @extend %date-time;
+
+    padding: ((10 /2) * 1px) ((20 / 2) * 1px);
+    font-size: 1.2rem;
+
+    @media screen and (min-width: 720px) {
+      // position: absolute;
+      // top: 0;
+      // right: 100%;
+      font-size: 1.8rem;
+    }
+
+    &.is-empty {
+      display: none;
+
+       @media screen and (min-width: 720px) {
+         display: inline-block;
+       }
+      // visibility: hidden;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.radius-control {
+	$self: &;
+
+	position: relative;
+	width: 221px;
+	height: 221px;
+
+	&__display {
+		@extend %radius-control-knob;
+
+		z-index: 10;
+		background: #FEFEFE url('../images/controls/rounded/background.svg') center center no-repeat;
+		background-size: contain;
+
+		@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { 
+			background-image: url('../images/controls/rounded/background@1x.svg');
+		}
+	
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+			background-image: url('../images/controls/rounded/background@2x.png');
+		}
+	}
+	
+	&__knob {
+		@extend %radius-control-knob;
+
+		z-index: 100;
+		background-color: transparent;
+		transform: rotate(-145deg);
+		transition: transform .25s ease-in-out;
+
+		.icon {
+			position: absolute;
+			top: 5px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			cursor: pointer;
+		}
+	}
+
+	&__value {
+		color: #333;
+		font-weight: bold;
+		font-size: 6.6rem;
+		line-height: (76 / 66);
+	}
+
+	&__circle-fill {
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 11;
+		margin: auto;
+		width: 178px;
+		height: 178px;
+
+		.segment {
+			background-color: #F5A623;
+		}
+	}
+
+	&__circle-empty {
+		@extend #{$self}__circle-fill;
+
+		.segment {
+			background-color: #333;
+		}
+	}
+
+	.segment {
+		position: absolute;
+		left: 50%;
+		top: 42%; /* magic */
+		width: 1px;
+		height: 24px;
+		opacity: 0;
+
+		&.is-active {
+			opacity: .7;
+		}
+	}
+}

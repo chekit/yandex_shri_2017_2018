@@ -1,0 +1,25 @@
+$base-gutter: 6px;
+
+.card-cover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-bottom: $base-gutter * 2;
+	width: 170px;
+	height: 170px;
+	background: #ececec url('../images/contact.png') 50% 50% no-repeat;
+	background-size: contain;
+	border-radius: 50%;
+
+	.no-default & {
+		width: auto;
+		height: auto;
+		background: none;
+	}
+
+	&__image {
+		display: block;
+		object-fit: cover;
+	}
+}

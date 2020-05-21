@@ -1,0 +1,43 @@
+//- data.mod: ['']
+//- data.type: 'LIGHT' | 'TEMPERATURE' | 'SCHEDULE'
+//- data.enabled: boolean
+//- data.title: string
+//- data.subtitle?: string
+
+- var icons = {};
+- icons.LIGHT = { filename: 'icon_sun', title: 'Свет', mod: 'icon--sun' };
+- icons.TEMPERATURE = { filename: 'icon_temperature', title: 'Температура', mod: 'icon--temperature' };
+- icons.SCHEDULE = { filename: 'icon_scheduled', title: 'Расписание', mod: 'icon--scheduled' };
+
+mixin control(data, index)
+	div&attributes({
+		class: [
+			'control', 
+			data.mod ? data.mod.join(', ') : '',
+			data.type === 'LIGHT' ? 'control--light' : ''
+		],
+		'data-type': data.type
+	})
+		.control__body
+			div&attributes({
+				class: ['control__icon', `${data.enabled ? 'control__icon--enabled' : 'control__icon--disabled'}`]
+			})
+				if data.type === 'TEMPERATURE'
+					P.control__icon-value +23
+				+icon(icons[data.type].filename + `${data.enabled  ? '_2' : ''}`, 'controls', icons[data.type].title, [icons[data.type].mod])
+			.control__content
+				p.control__title!= data.title
+				if data.subtitle
+					p.control__subtitle!= data.subtitle
+				.control__settings&attributes({
+					class: data.type === 'LIGHT' ? 'control__settings--left' : ''
+				})
+					if data.type === 'TEMPERATURE' && index !== 2
+						include ../radius-control/index
+					if data.type === 'LIGHT'
+						include ../light-control/index
+					if data.type === 'TEMPERATURE' && index === 2
+						include ../degree-control/index
+		.control__manage
+			button.control__button.control__button--ok Применить
+			button.control__button Закрыть

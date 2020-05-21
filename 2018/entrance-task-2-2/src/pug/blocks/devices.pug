@@ -1,0 +1,21 @@
+extends ./scripts
+
+block append settings
+	- var className = 'devices'
+	- var title = 'Избранные устройства'
+
+	- var controls = [];
+	- controls.push({ type: 'LIGHT', enabled: true, title: 'Xiaomi Yeelight LED Smart Bulb', subtitle: 'Включено'})
+	- controls.push({ type: 'LIGHT', enabled: false, title: 'D-Link Omna 180 Cam', subtitle: 'Включится в 17:00'})
+	- controls.push({ type: 'TEMPERATURE', enabled: false, title: 'Elgato Eve Degree Connected', subtitle: 'Выключено до 17:00'})
+	- controls.push({ type: 'LIGHT', enabled: false, title: 'LIFX Mini Day & Dusk A60 E27', subtitle: 'Включится в 17:00'})
+	- controls.push({ type: 'LIGHT', enabled: true, title: 'Xiaomi Mi Air Purifier 2S', subtitle: 'Включено'})
+	- controls.push({ type: 'LIGHT', enabled: false, title: 'Philips Zhirui', subtitle: 'Выключено'})
+	- controls.push({ type: 'LIGHT', enabled: true, title: 'Xiaomi Mi Air Purifier 2S', subtitle: 'Включено'})
+
+	- var buttonsClassNames =  [['arrow-left'], ['arrow-right', 'is-active']]
+
+	- var filters = ['Кухня', 'Зал', 'Лампочки', 'Камеры']
+
+block append header
+	+filter(filters)

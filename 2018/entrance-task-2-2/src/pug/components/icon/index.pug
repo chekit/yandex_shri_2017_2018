@@ -1,0 +1,9 @@
+mixin icon(fileName, folder = null, title = '', classNames = [])
+	- var folderName = !!folder ? `${folder}/` : '';
+
+	img&attributes({
+		class: ['icon'].concat(classNames),
+		srcset: `images/icons/${folderName}${fileName}.svg, images/icons/${folder}/${fileName}@2x.png 2x`,
+		src: `images/icons/${folderName}${fileName}@1x.png`,
+		alt: title
+	})

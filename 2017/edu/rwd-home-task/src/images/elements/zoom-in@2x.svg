@@ -1,0 +1,54 @@
+<svg id="zoom-in" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 50 50">
+<defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #d4d4d4;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        fill: #000101;
+        filter: url(#filter-3);
+      }
+
+      .cls-4 {
+        filter: url(#filter-4);
+      }
+    </style>
+    <filter id="filter" x="-0.188" y="30.531" width="19.656" height="19.656" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#d4d4d4"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="-0.188" y="-0.188" width="19.656" height="19.656" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#d4d4d4"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="30.531" y="-0.188" width="19.656" height="19.656" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#d4d4d4"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="30.531" y="30.531" width="19.656" height="19.656" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#d4d4d4"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M16.925,30.531L3.42,44.037l0.019-10.2L-0.173,37.45-0.2,50.2l12.748-.024,3.611-3.611-10.2.019L19.469,33.075Z"/>
+  <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-2" d="M16.925,19.469L3.42,5.963l0.019,10.2L-0.173,12.55-0.2-.2,12.55-.173l3.611,3.611-10.2-.019L19.469,16.925Z"/>
+  <path id="Shape_1_copy_2" data-name="Shape 1 copy 2" class="cls-3" d="M33.075,19.469L46.58,5.963l-0.019,10.2,3.611-3.611L50.2-.2,37.45-.173,33.839,3.438l10.2-.019L30.531,16.925Z"/>
+  <path id="Shape_1_copy_3" data-name="Shape 1 copy 3" class="cls-4" d="M30.531,33.075L44.037,46.58l-10.2-.019,3.611,3.611L50.2,50.2,50.173,37.45l-3.611-3.611,0.019,10.2L33.075,30.531Z"/>
+</svg>

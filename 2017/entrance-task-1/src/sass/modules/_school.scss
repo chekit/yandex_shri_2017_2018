@@ -1,0 +1,45 @@
+.schools {
+
+  @media screen and (min-width: 720px) {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+.school {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+
+  @media screen and (min-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-end;
+    margin-right: -1px;
+    padding-top: $school-name-height;
+    width: 100%;
+  }
+
+  /*** Schools ***/
+
+  &--interface {
+    @extend .school;
+    
+    border-color: $interface;
+  }
+
+  &--mobile {
+    @extend .school;
+    
+    border-color: $mobile;
+  }
+
+  &--design {
+    @extend .school;
+    
+    border-color: $design;
+  }
+}
+
+@import 'school/name';
+@import 'school/time';

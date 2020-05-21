@@ -1,0 +1,46 @@
+.lection {
+  border-top: 1px solid transparent;
+  padding: 10px;
+
+  @media screen and (min-width: 720px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    min-height: 150px;
+    // height: 100%;
+    // min-height: 100px;
+    // align-self: flex-end;
+  }
+
+  &:last-child {
+    // border-top: none;
+  }
+
+  &.is-empty {
+    // border-top: none;
+    display: none;
+
+    @media screen and (min-width: 720px) {
+      display: block;
+    }
+  }
+  
+  /*** Environment ***/
+  .school--interface & {
+    border-top-color: $interface;
+  }
+
+  .school--mobile & {
+    border-top-color: $mobile;
+  }
+
+  .school--design & {
+    border-top-color: $design;
+  }
+}
+
+@import 'lection/title';
+@import 'lection/author';
+@import 'lection/place';

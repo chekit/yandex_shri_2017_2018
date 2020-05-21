@@ -1,0 +1,6 @@
+mixin menu(className = '', links= [])
+	div&attributes({
+		class: ['menu', className]
+	})
+		button.hamburger.js-open-menu
+		+links-list('menu-list', links)

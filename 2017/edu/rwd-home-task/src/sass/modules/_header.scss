@@ -1,0 +1,38 @@
+.header {
+	padding: 1em 0;
+	background-color: $header-bg;
+
+	&__wrapper {
+		@extend %inner-wrapper;
+
+		@include bp('tablet-vertical') {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+	&__title {
+		margin: 0;
+		color: $header-text-color;
+		text-align: center;
+		text-shadow: 1px 1px 0 rgba(255, 255, 255, .15);
+		transition: font-size .15s ease-in-out;
+
+		$map: (320px: 14px, 768px: 24px, 1024px: 34px);
+		@include poly-fluid-sizing('font-size', $map);
+	}
+
+	&__logo {
+		display: none;
+
+		@include bp('tablet-vertical') {
+			display: block;
+			margin-right: 1em;
+		}
+	}
+
+	.is-dark-red {
+		color: $header-dark-red;
+	}
+}

@@ -1,0 +1,100 @@
+.menu {
+}
+
+.menu-list {
+	position: fixed;
+	left: 100%;
+	top: 0;
+	height: 100vh;
+	width: $m_menu_mob_width;
+	padding: 10px 0;
+	margin: 0;
+	background-color: #222;
+	border-left: 1px solid white;
+	color: white;
+	font-size: 1rem;
+	line-height: 1.3;
+	list-style-type: none;
+	transition: transform ease-out .2s;
+
+	@media screen and (min-width: 1024px) {
+		position: static;
+		display: flex;
+		background-color: transparent;
+		width: auto;
+		height: auto;
+		border: none;
+	}
+
+	&__item {
+		font-size: 1.8em;
+		line-height: (42 / 18);
+		font-weight: 600;
+		flex: 0;
+
+		@media screen and (min-width: 1024px) {
+			margin-right: 20px;
+			font-size: 1.6em;
+			line-height: (20 / 16);
+			opacity: 0.6;
+		}
+		
+		&.is-current {
+			@media screen and (min-width: 1024px) {
+				opacity: 1;
+			}			
+		}
+	}
+
+	&__link {
+		display: block;
+		padding: 10px (24 / 256) * 100%;
+		color: white;
+		text-decoration: none;
+		transition: color .25s ease-in-out;
+
+		@media screen and (min-width: 1024px) {
+			padding: 10px;
+			color: #333333;
+		}
+
+		&:hover {
+			@media screen and (min-width: 1024px) {
+				color: darken(#333, 30%);
+			}
+		}
+		
+		&:active {
+			background-color: #000;
+
+			@media screen and (min-width: 1024px) {
+				background-color: transparent;
+			}
+		}
+	}
+
+}
+
+.hamburger {
+	padding: 0;
+	margin: 0;
+	width: 16px;
+	height: 14px;
+	background: transparent url('../images/menu/icon_list_m.png') center center no-repeat;
+	background-size: cover;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { 
+		background-image: url('../images/menu/icon_list_m@1x.svg');
+	}
+
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+		background-image: url('../images/menu/icon_list_m@2x.png');
+	}
+
+	@media screen and (min-width: 1024px) {
+		display: none;
+	}
+}

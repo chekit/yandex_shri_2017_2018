@@ -1,0 +1,62 @@
+$padding-320: 5px;
+$padding-720: 20px;
+
+.modal {
+  position: relative;
+  padding: $padding-320;
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+
+  @media screen and (min-width: 720px) {
+    padding: 20px;
+    max-width: 450px;
+  }
+
+  &__close {
+    position: absolute;
+    top: $padding-320;
+    right: $padding-320;
+    margin: 0;
+    padding: 5px;
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 1.8rem;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    transition: color .35s ease-in-out;
+
+    @media screen and (min-width: 720px) {
+      top: $padding-720;
+      right: $padding-720;
+    }
+
+    &:hover {
+      color: #333;
+    }
+  }
+
+  &__body {
+    margin-top: 3 * $padding-320 +  18px;
+
+    @media screen and (min-width: 720px) {
+      margin-top: 3 * $padding-320 +  18px;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto 20px;
+    width: 200px;
+    border-bottom: 4px red solid;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+}

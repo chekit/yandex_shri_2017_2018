@@ -1,0 +1,129 @@
+$base-gutter: 6px;
+
+.card {
+	position: relative;
+	box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+
+	position: relative;
+	margin-bottom: $base-gutter * 4;
+	background: #fff;
+    color: rgba(0,0,0,.87);
+	border-radius: 2px;
+	transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+
+	&__delete-btn {
+		position: absolute;
+		top: $base-gutter;
+		left: $base-gutter;
+		background-color: #056c9d;
+		font-size: $base-gutter * 2;
+
+		&:hover,
+		&:active {
+			background-color: darken(#056c9d, 5%);
+		}
+	}
+
+	/* header */
+	&__header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: $base-gutter * 3;
+		background-color: rgb(44, 150, 208);
+		color: white;
+	}
+
+	&__cover {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		margin-bottom: $base-gutter * 2;
+		width: 170px;
+		height: 170px;
+		background: #ececec url('../images/contact.png') 50% 50% no-repeat;
+		background-size: contain;
+		border-radius: 50%;
+	}
+
+	&__image {
+		display: block;
+		object-fit: cover;
+	}
+
+	&__name {
+		margin: 0 0 $base-gutter * 2;
+		font-size: $base-gutter * 4;
+	}
+
+	&__position {
+		margin: 0;
+		font-size: $base-gutter * 3;
+		opacity: .74;
+	}
+	/* /header */
+
+	/* place */
+	&__place {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: $base-gutter;
+		background-color: rgb(5, 108, 157);
+		color: white;
+		text-align: center;
+		font-size: $base-gutter * 2;
+
+		p {
+			margin: 0;
+		}
+
+		.icon {
+			margin: 0 $base-gutter;
+			font-size: $base-gutter * 3;
+		}
+	}
+	/* /place */
+	
+	
+	&__info {
+		padding: $base-gutter * 3;
+		color: rgb(97, 97, 97);
+
+	}	
+	
+	&__phone {
+		margin: 0 0 $base-gutter;
+		line-height: 2;
+		font-size: $base-gutter * 3;
+		border-bottom: 1px solid rgb(202, 202, 202);
+
+		.icon {
+			width: $base-gutter * 4;
+			margin-right: $base-gutter;
+			vertical-align: middle;
+			color: rgb(37, 142, 200);
+			text-align: center;
+		}
+	}
+
+	&__web,
+	&__email {
+		@extend .card__phone;
+	}
+
+	&__manage {
+		padding: $base-gutter $base-gutter * 2;
+
+		.button {
+			background-color: rgb(38, 133, 191);
+
+			&:hover {
+				background-color: darken(rgb(38, 133, 191), 5%);
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.header {
+  margin: 0 auto;
+  padding: 1em 0;
+  width: (300 / 320) * 100%;
+  border-bottom: 1px solid #898989;
+
+  @media screen and (min-width: 720px) {
+    padding: 50px 0 25px;
+  }
+}
+
+@import 'header/title';
+@import 'header/sub-title';
+
+.red-letter {
+  color: #f00;
+}

@@ -1,0 +1,36 @@
+.school {
+  &__name {
+    box-sizing: border-box;
+    padding: (20 /2) * 1px;
+    height: 100%;
+    max-height: $school-name-height;
+    color: #000;
+    font-size: (30 / 2) * 1px;
+    line-height: 1;
+    vertical-align: middle;
+    // align-self: flex-start;
+
+    @media screen and (min-width: 720px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      font-size: 1.8rem;
+    }
+  
+    /*** Environment ***/
+    .school--interface & {
+      background-color: $interface;
+    }
+
+    .school--mobile & {
+      background-color: $mobile;
+    }
+
+    .school--design & {
+      background-color: $design;
+    }
+  }
+}

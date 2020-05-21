@@ -1,0 +1,7 @@
+.degree-control {
+	@extend %linear-control-block;
+
+	.filters {
+		@extend %linear-control-block__filters;
+	}
+}

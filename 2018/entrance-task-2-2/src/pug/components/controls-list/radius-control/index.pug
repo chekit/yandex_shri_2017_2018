@@ -1,0 +1,27 @@
+- var amount = 105;
+
+.radius-control
+	.radius-control__knob(style=`transform: rotate(${amount}deg)`)
+		+icon('icon_arrow', 'controls', '', 'icon--knob')
+	.radius-control__display
+		p.radius-control__value +23
+	.radius-control__circle-fill
+		- var deg = -145;
+		while deg <= 145
+			span.segment&attributes({
+				style: {
+					transform: `rotate(${deg}deg) translate(0px, -${200 / 2}px)`
+				},
+				class: [deg < amount ? 'is-active' : '']
+			})
+			- deg += 3
+	.radius-control__circle-empty
+		- var deg = -145;
+		while deg <= 145
+			span.segment&attributes({
+				style: {
+					transform: `rotate(${deg}deg) translate(0px, -${200 / 2}px)`
+				},
+				class: [deg >= amount ? 'is-active' : '']
+			})
+			- deg += 3

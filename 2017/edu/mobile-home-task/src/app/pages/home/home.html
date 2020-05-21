@@ -1,0 +1,17 @@
+<ion-header>
+	<ion-navbar color="light">
+	<ion-title>Card Holder</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content padding>
+	<button class="add-contact-btn" (click)="addCard()" *ngIf="cards && cards.length === 0" ion-button block icon-left>
+		<ion-icon name="md-person-add"></ion-icon>
+		Let's add  1st card
+	</button>
+	<cards [cardsList]="cards" (onCardRemove)="onCardRemove($event)"></cards>
+	<ion-fab *ngIf="cards && cards.length > 0" right bottom>
+		<button ion-fab class="add-contact-btn" (click)="addCard()">
+			<ion-icon name="md-person-add"></ion-icon>
+		</button>
+	</ion-fab>
+</ion-content>

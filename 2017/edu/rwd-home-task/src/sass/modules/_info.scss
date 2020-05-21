@@ -1,0 +1,16 @@
+.info {
+	&__wrapper {
+		@extend %inner-wrapper;
+	}
+
+	&__text {
+		// font-size: 1.6rem;
+
+		// @include bp('tablet-vertical') {
+		// 	font-size: 1.8rem;
+		// }
+
+		$map: (320px: 16px, 768px: 18px);
+		@include poly-fluid-sizing('font-size', $map);
+	}
+}

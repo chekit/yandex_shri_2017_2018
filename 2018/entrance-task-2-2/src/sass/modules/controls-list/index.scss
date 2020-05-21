@@ -1,0 +1,107 @@
+@import 'control';
+@import 'range';
+@import 'radius-control';
+@import 'light-control';
+@import 'degree-control';
+
+.controls-list {
+	position: relative;
+	margin: 0 (-1 * $m_primary_padding_mob);
+	
+	.primary & {
+		overflow: hidden;
+		margin: 0 (-1 * $m_primary_padding_mob);
+
+		@media screen and (min-width: 1024px) {
+			margin: (-1 * $m_primary_padding_mob) 0;
+		}
+	}
+
+	.scripts & {
+		@media screen and (min-width: 1024px) {
+			margin: 0;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		grid-column: 2 / -1;
+		grid-row: 1 / -1;
+	}
+
+	&__container {
+		display: flex;
+		align-items: flex-end;
+		overflow: auto;
+		padding-bottom: 5px; /* for shadow */
+
+		@media screen and (min-width: 1024px) {
+			overflow: hidden;
+		}
+
+		.primary & {
+			@media screen and (min-width: 1024px) {
+				flex-direction: column;
+			}
+		}
+
+		.scripts & {
+			@media screen and (min-width: 1024px) {
+				margin: 0;
+				display: grid;
+				grid-template-columns: repeat(auto-fill, $m_control_width);
+				grid-gap: 20px 20px;
+			}
+		}
+	}
+
+	&__manage {
+		display: none;
+		position: absolute;
+		right: 0;
+		bottom: 100%;
+		margin-bottom: 15px;
+
+		@media screen and (min-width: 1024px) {
+			display: block;
+		}
+
+		.primary & {
+			@media screen and (min-width: 1024px) {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: $m_primary_padding_mob / 2;
+				padding: 0;
+				margin: auto;
+				width: 16px;
+				height: 16px;
+			}
+		}
+
+		.devices & {
+			@media screen and (min-width: 1024px) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	
+	&__scroll-button {
+		padding: 0;
+		background: none;
+		border: none;
+		outline: none;
+		opacity: .3;
+		transition: opacity .15s ease-in-out;
+		cursor: pointer;
+
+		&.is-active {
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		& + & {
+			margin-left: 20px;
+		}
+	}
+}

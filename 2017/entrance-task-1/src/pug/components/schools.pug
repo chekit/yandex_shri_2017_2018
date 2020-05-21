@@ -1,0 +1,25 @@
+mixin schools(schools)
+  .schools
+    each school in schools
+      div&attributes({
+        class: [school.prefix ? `school--${school.prefix}` : `school`]
+      })
+        div.school__name!= school.name
+        each lection in school.schedule
+          if lection.theme
+            .school__time!= lection.time
+            .school__lection.lection
+              if lection.theme.isdone
+                a.lection__title(href=lection.theme.isdone)!= lection.theme.title
+              else
+                p.lection__title!= lection.theme.title
+              p.lection__author
+                each author, index in lection.theme.authors
+                  a(href="#")!=author.name
+                  if index !== lection.theme.authors.length - 1
+                    | , 
+              p.lection__place
+                a(href="#") Яндекс
+          else
+            .school__time.is-empty!= lection.time
+            .school__lection.lection.is-empty

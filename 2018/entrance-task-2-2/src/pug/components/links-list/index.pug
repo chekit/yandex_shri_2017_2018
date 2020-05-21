@@ -1,0 +1,12 @@
+mixin links-list(className,  links= [])
+	ul&attributes({
+		class: [ className ]
+	})
+		each link, index in links
+			li&attributes({
+				class: [`${className}__item`, index === 0 ? 'is-current' : '']
+			})
+				a&attributes({
+					class: [ `${className}__link` ],
+					href: "#"
+				})!= link

@@ -1,0 +1,44 @@
+.day {
+  margin-bottom: 20px;
+
+  &__date {
+    @extend %date-time;
+
+    margin-bottom: (40 / 2) * 1px;
+    margin-right: 5px;
+    padding: 8px;
+    font-size: (36 / 2) * .1rem;
+    font-weight: bold;
+    line-height: 1;
+
+    @media screen and (min-width: 720px) {
+      padding: 20px;
+      font-size: 3.6rem;
+    }
+
+    .month--october  & {
+      background-color: $october;
+    }
+
+    .month--november & {
+      background-color: $november;
+    }
+
+    .month--december & {
+      background-color: $december;
+    }
+  }
+
+  &__name {
+    @extend %date-time;
+
+    padding: 5px;
+    background-color: #afafaf;
+    font-size: 1.1rem;
+    vertical-align: top;
+
+    @media screen and (min-width: 720px) {
+      font-size: 1.4rem;
+    }
+  }
+}

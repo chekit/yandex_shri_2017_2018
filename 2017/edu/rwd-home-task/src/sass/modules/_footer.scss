@@ -1,0 +1,22 @@
+.footer {
+	overflow: hidden;
+	background-color: $footer-bg;
+
+	&__wrapper {
+		@extend %inner-wrapper;
+	}
+
+	&__text {
+		margin: 1em 0;
+		color: $footer-text-color;
+		font-size: 1.2rem;
+	}
+
+	&__link {
+		color: $footer-link-color;
+	}
+
+	&__copyright {
+		@extend .footer__text;
+	}
+}

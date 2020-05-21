@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Панель управления «умным домом»</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/libs/modernizr.js"></script>
+    <link rel="stylesheet" href="css/styles.min.css">
+  </head>
+  <body>
+    <div class="wrapper"><!--[if lt IE 8]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com/">upgrade your browser</a>
+        to improve your experience.
+      </p><![endif]-->
+      <header class="header">
+              <div class="logo header__logo"><a class="logo__link" href="#"><img srcset="images/logo/yandex_home.svg, images/logo/yandex_home@2x.png 2x" src="images/logo/yandex_home@1x.png" alt="Яндекс Дом"></a></div>
+              <div class="menu header__menu">
+                <button class="hamburger js-open-menu"></button>
+                <ul class="menu-list">
+                  <li class="menu-list__item is-current"><a class="menu-list__link" href="#">Сводка</a></li>
+                  <li class="menu-list__item"><a class="menu-list__link" href="#">Устройства</a></li>
+                  <li class="menu-list__item"><a class="menu-list__link" href="#">Сценарии</a></li>
+                </ul>
+              </div>
+      </header>
+      <main class="main">
+        <div class="primary">
+          <div class="greeting">
+            <p class="greeting__name">Привет, Геннадий!</p>
+            <p class="greeting__status">Двери и окна закрыты, сигнализация включена.</p>
+          </div>
+          <div class="weather">
+            <div class="weather__item conditions">
+              <p class="conditions__point">Дома</p>
+              <p class="conditions__deg">+23</p>
+            </div>
+            <div class="weather__item conditions">
+              <p class="conditions__point">За окном</p>
+              <p class="conditions__deg">+19<span class="conditions__icon"><img class="icon icon--cloud-drizzle" srcset="images/icons/weather/cloud-drizzle.svg, images/icons/weather/cloud-drizzle@2x.png 2x" src="images/icons/weather/cloud-drizzle@1x.png" alt="Дождь"/></span></p>
+            </div>
+          </div>
+          <div class="controls-list">
+            <div class="controls-list__container">
+              <div class="control" data-type="TEMPERATURE">
+                <div class="control__body">
+                  <div class="control__icon control__icon--disabled">
+                    <P class="control__icon-value">+23</P><img class="icon icon--temperature" srcset="images/icons/controls/icon_temperature.svg, images/icons/controls/icon_temperature@2x.png 2x" src="images/icons/controls/icon_temperature@1x.png" alt="Температура"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Philips Cooler</p>
+                    <p class="control__subtitle">Начнет охлаждать в 16:30</p>
+                    <div class="control__settings">
+                      <div class="radius-control">
+                        <div class="radius-control__knob" style="transform: rotate(105deg);"><img class="icon icon--knob" srcset="images/icons/controls/icon_arrow.svg, images/icons/controls/icon_arrow@2x.png 2x" src="images/icons/controls/icon_arrow@1x.png" alt=""/>
+                        </div>
+                        <div class="radius-control__display">
+                          <p class="radius-control__value">+23</p>
+                        </div>
+                        <div class="radius-control__circle-fill"><span class="segment is-active" style="transform:rotate(-145deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-142deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-139deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-136deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-133deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-130deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-127deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-124deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-121deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-118deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-115deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-112deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-109deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-106deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-103deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-100deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-97deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-94deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-91deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-88deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-85deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-82deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-79deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-76deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-73deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-70deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-67deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-64deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-61deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-58deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-55deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-52deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-49deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-46deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-43deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-40deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-37deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-34deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-31deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-28deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-25deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-22deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-19deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-16deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-13deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-10deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-7deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-4deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-1deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(2deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(5deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(8deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(11deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(14deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(17deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(20deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(23deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(26deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(29deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(32deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(35deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(38deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(41deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(44deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(47deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(50deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(53deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(56deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(59deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(62deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(65deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(68deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(71deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(74deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(77deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(80deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(83deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(86deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(89deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(92deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(95deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(98deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(101deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(104deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(107deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(110deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(113deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(116deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(119deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(122deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(125deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(128deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(131deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(134deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(137deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(140deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(143deg) translate(0px, -100px);"></span>
+                        </div>
+                        <div class="radius-control__circle-empty"><span class="segment" style="transform:rotate(-145deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-142deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-139deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-136deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-133deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-130deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-127deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-124deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-121deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-118deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-115deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-112deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-109deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-106deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-103deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-100deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-97deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-94deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-91deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-88deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-85deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-82deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-79deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-76deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-73deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-70deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-67deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-64deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-61deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-58deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-55deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-52deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-49deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-46deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-43deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-40deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-37deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-34deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-31deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-28deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-25deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-22deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-19deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-16deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-13deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-10deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-7deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-4deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-1deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(2deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(5deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(8deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(11deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(14deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(17deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(20deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(23deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(26deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(29deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(32deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(35deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(38deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(41deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(44deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(47deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(50deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(53deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(56deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(59deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(62deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(65deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(68deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(71deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(74deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(77deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(80deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(83deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(86deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(89deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(92deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(95deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(98deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(101deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(104deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(107deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(110deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(113deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(116deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(119deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(122deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(125deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(128deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(131deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(134deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(137deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(140deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(143deg) translate(0px, -100px);"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control control--light" data-type="LIGHT">
+                <div class="control__body">
+                  <div class="control__icon control__icon--disabled"><img class="icon icon--sun" srcset="images/icons/controls/icon_sun.svg, images/icons/controls/icon_sun@2x.png 2x" src="images/icons/controls/icon_sun@1x.png" alt="Свет"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Xiaomi Yeelight LED Smart Bulb</p>
+                    <p class="control__subtitle">Включится в 17:00</p>
+                    <div class="control__settings control__settings--left">
+                      <div class="light-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Дневной свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Вечерний свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Рассвет</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--warm">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_min.svg, images/icons/controls/icon_sun_min@2x.png 2x" src="images/icons/controls/icon_sun_min@1x.png" alt="Минимум"/>
+                              </div>
+                              <div class="range__line-top"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_max.svg, images/icons/controls/icon_sun_max@2x.png 2x" src="images/icons/controls/icon_sun_max@1x.png" alt="Максимум"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control" data-type="TEMPERATURE">
+                <div class="control__body">
+                  <div class="control__icon control__icon--disabled">
+                    <P class="control__icon-value">+23</P><img class="icon icon--temperature" srcset="images/icons/controls/icon_temperature.svg, images/icons/controls/icon_temperature@2x.png 2x" src="images/icons/controls/icon_temperature@1x.png" alt="Температура"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Elgato Eve Degree Connected</p>
+                    <p class="control__subtitle">Включится в 19:00</p>
+                    <div class="control__settings">
+                      <div class="degree-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Холодно</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Тепло</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Жарко</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--degree">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><span class="range__degree">-10</span>
+                              </div>
+                              <div class="range__line-top"><span class="range__degree">+30</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+            </div>
+            <div class="controls-list__manage">
+              <button class="controls-list__scroll-button js-scroll-list is-active"><img class="icon icon--arrow-up" srcset="images/icons/buttons/arrow-up.svg, images/icons/buttons/arrow-up@2x.png 2x" src="images/icons/buttons/arrow-up@1x.png" alt="Вверх"/>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="scripts">
+          <div class="scripts__header">
+            <h2 class="scripts__title">Избранные сценарии</h2>
+          </div>
+          <div class="controls-list">
+            <div class="controls-list__container">
+              <div class="control control--light" data-type="LIGHT">
+                <div class="control__body">
+                  <div class="control__icon control__icon--enabled"><img class="icon icon--sun" srcset="images/icons/controls/icon_sun_2.svg, images/icons/controls/icon_sun_2@2x.png 2x" src="images/icons/controls/icon_sun_2@1x.png" alt="Свет"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Выключить весь свет в доме и во дворе</p>
+                    <div class="control__settings control__settings--left">
+                      <div class="light-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Дневной свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Вечерний свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Рассвет</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--warm">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_min.svg, images/icons/controls/icon_sun_min@2x.png 2x" src="images/icons/controls/icon_sun_min@1x.png" alt="Минимум"/>
+                              </div>
+                              <div class="range__line-top"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_max.svg, images/icons/controls/icon_sun_max@2x.png 2x" src="images/icons/controls/icon_sun_max@1x.png" alt="Максимум"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control" data-type="SCHEDULE">
+                <div class="control__body">
+                  <div class="control__icon control__icon--disabled"><img class="icon icon--scheduled" srcset="images/icons/controls/icon_scheduled.svg, images/icons/controls/icon_scheduled@2x.png 2x" src="images/icons/controls/icon_scheduled@1x.png" alt="Расписание"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Я ухожу</p>
+                    <div class="control__settings">
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control control--light" data-type="LIGHT">
+                <div class="control__body">
+                  <div class="control__icon control__icon--enabled"><img class="icon icon--sun" srcset="images/icons/controls/icon_sun_2.svg, images/icons/controls/icon_sun_2@2x.png 2x" src="images/icons/controls/icon_sun_2@1x.png" alt="Свет"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Включить свет в коридоре</p>
+                    <div class="control__settings control__settings--left">
+                      <div class="light-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Дневной свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Вечерний свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Рассвет</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--warm">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_min.svg, images/icons/controls/icon_sun_min@2x.png 2x" src="images/icons/controls/icon_sun_min@1x.png" alt="Минимум"/>
+                              </div>
+                              <div class="range__line-top"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_max.svg, images/icons/controls/icon_sun_max@2x.png 2x" src="images/icons/controls/icon_sun_max@1x.png" alt="Максимум"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control" data-type="TEMPERATURE">
+                <div class="control__body">
+                  <div class="control__icon control__icon--enabled">
+                    <P class="control__icon-value">+23</P><img class="icon icon--temperature" srcset="images/icons/controls/icon_temperature_2.svg, images/icons/controls/icon_temperature_2@2x.png 2x" src="images/icons/controls/icon_temperature_2@1x.png" alt="Температура"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Набрать горячую ванну</p>
+                    <p class="control__subtitle">Начнётся в 18:00</p>
+                    <div class="control__settings">
+                      <div class="radius-control">
+                        <div class="radius-control__knob" style="transform: rotate(105deg);"><img class="icon icon--knob" srcset="images/icons/controls/icon_arrow.svg, images/icons/controls/icon_arrow@2x.png 2x" src="images/icons/controls/icon_arrow@1x.png" alt=""/>
+                        </div>
+                        <div class="radius-control__display">
+                          <p class="radius-control__value">+23</p>
+                        </div>
+                        <div class="radius-control__circle-fill"><span class="segment is-active" style="transform:rotate(-145deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-142deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-139deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-136deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-133deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-130deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-127deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-124deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-121deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-118deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-115deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-112deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-109deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-106deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-103deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-100deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-97deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-94deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-91deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-88deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-85deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-82deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-79deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-76deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-73deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-70deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-67deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-64deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-61deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-58deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-55deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-52deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-49deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-46deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-43deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-40deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-37deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-34deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-31deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-28deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-25deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-22deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-19deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-16deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-13deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-10deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-7deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-4deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-1deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(2deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(5deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(8deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(11deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(14deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(17deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(20deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(23deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(26deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(29deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(32deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(35deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(38deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(41deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(44deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(47deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(50deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(53deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(56deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(59deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(62deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(65deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(68deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(71deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(74deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(77deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(80deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(83deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(86deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(89deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(92deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(95deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(98deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(101deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(104deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(107deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(110deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(113deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(116deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(119deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(122deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(125deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(128deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(131deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(134deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(137deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(140deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(143deg) translate(0px, -100px);"></span>
+                        </div>
+                        <div class="radius-control__circle-empty"><span class="segment" style="transform:rotate(-145deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-142deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-139deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-136deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-133deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-130deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-127deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-124deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-121deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-118deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-115deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-112deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-109deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-106deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-103deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-100deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-97deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-94deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-91deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-88deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-85deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-82deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-79deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-76deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-73deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-70deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-67deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-64deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-61deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-58deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-55deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-52deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-49deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-46deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-43deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-40deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-37deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-34deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-31deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-28deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-25deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-22deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-19deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-16deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-13deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-10deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-7deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-4deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-1deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(2deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(5deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(8deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(11deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(14deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(17deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(20deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(23deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(26deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(29deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(32deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(35deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(38deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(41deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(44deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(47deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(50deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(53deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(56deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(59deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(62deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(65deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(68deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(71deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(74deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(77deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(80deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(83deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(86deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(89deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(92deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(95deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(98deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(101deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(104deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(107deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(110deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(113deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(116deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(119deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(122deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(125deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(128deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(131deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(134deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(137deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(140deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(143deg) translate(0px, -100px);"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control" data-type="TEMPERATURE">
+                <div class="control__body">
+                  <div class="control__icon control__icon--enabled">
+                    <P class="control__icon-value">+23</P><img class="icon icon--temperature" srcset="images/icons/controls/icon_temperature_2.svg, images/icons/controls/icon_temperature_2@2x.png 2x" src="images/icons/controls/icon_temperature_2@1x.png" alt="Температура"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Сделать пол тёплым во всей квартире</p>
+                    <div class="control__settings">
+                      <div class="radius-control">
+                        <div class="radius-control__knob" style="transform: rotate(105deg);"><img class="icon icon--knob" srcset="images/icons/controls/icon_arrow.svg, images/icons/controls/icon_arrow@2x.png 2x" src="images/icons/controls/icon_arrow@1x.png" alt=""/>
+                        </div>
+                        <div class="radius-control__display">
+                          <p class="radius-control__value">+23</p>
+                        </div>
+                        <div class="radius-control__circle-fill"><span class="segment is-active" style="transform:rotate(-145deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-142deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-139deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-136deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-133deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-130deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-127deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-124deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-121deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-118deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-115deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-112deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-109deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-106deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-103deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-100deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-97deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-94deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-91deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-88deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-85deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-82deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-79deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-76deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-73deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-70deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-67deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-64deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-61deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-58deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-55deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-52deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-49deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-46deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-43deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-40deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-37deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-34deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-31deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-28deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-25deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-22deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-19deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-16deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-13deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-10deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-7deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-4deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(-1deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(2deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(5deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(8deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(11deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(14deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(17deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(20deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(23deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(26deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(29deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(32deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(35deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(38deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(41deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(44deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(47deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(50deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(53deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(56deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(59deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(62deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(65deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(68deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(71deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(74deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(77deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(80deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(83deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(86deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(89deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(92deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(95deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(98deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(101deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(104deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(107deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(110deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(113deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(116deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(119deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(122deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(125deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(128deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(131deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(134deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(137deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(140deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(143deg) translate(0px, -100px);"></span>
+                        </div>
+                        <div class="radius-control__circle-empty"><span class="segment" style="transform:rotate(-145deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-142deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-139deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-136deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-133deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-130deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-127deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-124deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-121deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-118deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-115deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-112deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-109deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-106deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-103deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-100deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-97deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-94deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-91deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-88deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-85deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-82deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-79deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-76deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-73deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-70deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-67deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-64deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-61deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-58deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-55deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-52deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-49deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-46deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-43deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-40deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-37deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-34deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-31deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-28deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-25deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-22deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-19deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-16deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-13deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-10deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-7deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-4deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(-1deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(2deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(5deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(8deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(11deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(14deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(17deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(20deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(23deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(26deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(29deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(32deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(35deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(38deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(41deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(44deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(47deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(50deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(53deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(56deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(59deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(62deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(65deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(68deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(71deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(74deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(77deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(80deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(83deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(86deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(89deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(92deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(95deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(98deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(101deg) translate(0px, -100px);"></span><span class="segment" style="transform:rotate(104deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(107deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(110deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(113deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(116deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(119deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(122deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(125deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(128deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(131deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(134deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(137deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(140deg) translate(0px, -100px);"></span><span class="segment is-active" style="transform:rotate(143deg) translate(0px, -100px);"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+            </div>
+            <div class="controls-list__manage">
+              <button class="controls-list__scroll-button js-scroll-list arrow-left"><img class="icon icon--arrow-left" srcset="images/icons/buttons/arrow-left.svg, images/icons/buttons/arrow-left@2x.png 2x" src="images/icons/buttons/arrow-left@1x.png" alt="Назад"/>
+              </button>
+              <button class="controls-list__scroll-button js-scroll-list arrow-right"><img class="icon icon--arrow-right" srcset="images/icons/buttons/arrow-right.svg, images/icons/buttons/arrow-right@2x.png 2x" src="images/icons/buttons/arrow-right@1x.png" alt="Вперёд"/>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="devices">
+          <div class="devices__header">
+            <h2 class="devices__title">Избранные устройства</h2>
+            <div class="filters">
+              <button class="filters__curent-type js-show-list"> <span class="text">Все</span><img class="icon icon--arrow-down" srcset="images/icons/buttons/arrow-down.svg, images/icons/buttons/arrow-down@2x.png 2x" src="images/icons/buttons/arrow-down@1x.png" alt="Развернуть"/>
+              </button>
+              <ul class="filters-list">
+                <li class="filters-list__item">
+                  <button class="filters__button is-active" id="js-filter-all">Все</button>
+                </li>
+                <li class="filters-list__item">
+                  <button class="filters__button">Кухня</button>
+                </li>
+                <li class="filters-list__item">
+                  <button class="filters__button">Зал</button>
+                </li>
+                <li class="filters-list__item">
+                  <button class="filters__button">Лампочки</button>
+                </li>
+                <li class="filters-list__item">
+                  <button class="filters__button">Камеры</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="controls-list">
+            <div class="controls-list__container">
+              <div class="control control--light" data-type="LIGHT">
+                <div class="control__body">
+                  <div class="control__icon control__icon--enabled"><img class="icon icon--sun" srcset="images/icons/controls/icon_sun_2.svg, images/icons/controls/icon_sun_2@2x.png 2x" src="images/icons/controls/icon_sun_2@1x.png" alt="Свет"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Xiaomi Yeelight LED Smart Bulb</p>
+                    <p class="control__subtitle">Включено</p>
+                    <div class="control__settings control__settings--left">
+                      <div class="light-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Дневной свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Вечерний свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Рассвет</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--warm">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_min.svg, images/icons/controls/icon_sun_min@2x.png 2x" src="images/icons/controls/icon_sun_min@1x.png" alt="Минимум"/>
+                              </div>
+                              <div class="range__line-top"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_max.svg, images/icons/controls/icon_sun_max@2x.png 2x" src="images/icons/controls/icon_sun_max@1x.png" alt="Максимум"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control control--light" data-type="LIGHT">
+                <div class="control__body">
+                  <div class="control__icon control__icon--disabled"><img class="icon icon--sun" srcset="images/icons/controls/icon_sun.svg, images/icons/controls/icon_sun@2x.png 2x" src="images/icons/controls/icon_sun@1x.png" alt="Свет"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">D-Link Omna 180 Cam</p>
+                    <p class="control__subtitle">Включится в 17:00</p>
+                    <div class="control__settings control__settings--left">
+                      <div class="light-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Дневной свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Вечерний свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Рассвет</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--warm">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_min.svg, images/icons/controls/icon_sun_min@2x.png 2x" src="images/icons/controls/icon_sun_min@1x.png" alt="Минимум"/>
+                              </div>
+                              <div class="range__line-top"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_max.svg, images/icons/controls/icon_sun_max@2x.png 2x" src="images/icons/controls/icon_sun_max@1x.png" alt="Максимум"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control" data-type="TEMPERATURE">
+                <div class="control__body">
+                  <div class="control__icon control__icon--disabled">
+                    <P class="control__icon-value">+23</P><img class="icon icon--temperature" srcset="images/icons/controls/icon_temperature.svg, images/icons/controls/icon_temperature@2x.png 2x" src="images/icons/controls/icon_temperature@1x.png" alt="Температура"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Elgato Eve Degree Connected</p>
+                    <p class="control__subtitle">Выключено до 17:00</p>
+                    <div class="control__settings">
+                      <div class="degree-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Холодно</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Тепло</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Жарко</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--degree">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><span class="range__degree">-10</span>
+                              </div>
+                              <div class="range__line-top"><span class="range__degree">+30</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control control--light" data-type="LIGHT">
+                <div class="control__body">
+                  <div class="control__icon control__icon--disabled"><img class="icon icon--sun" srcset="images/icons/controls/icon_sun.svg, images/icons/controls/icon_sun@2x.png 2x" src="images/icons/controls/icon_sun@1x.png" alt="Свет"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">LIFX Mini Day & Dusk A60 E27</p>
+                    <p class="control__subtitle">Включится в 17:00</p>
+                    <div class="control__settings control__settings--left">
+                      <div class="light-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Дневной свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Вечерний свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Рассвет</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--warm">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_min.svg, images/icons/controls/icon_sun_min@2x.png 2x" src="images/icons/controls/icon_sun_min@1x.png" alt="Минимум"/>
+                              </div>
+                              <div class="range__line-top"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_max.svg, images/icons/controls/icon_sun_max@2x.png 2x" src="images/icons/controls/icon_sun_max@1x.png" alt="Максимум"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control control--light" data-type="LIGHT">
+                <div class="control__body">
+                  <div class="control__icon control__icon--enabled"><img class="icon icon--sun" srcset="images/icons/controls/icon_sun_2.svg, images/icons/controls/icon_sun_2@2x.png 2x" src="images/icons/controls/icon_sun_2@1x.png" alt="Свет"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Xiaomi Mi Air Purifier 2S</p>
+                    <p class="control__subtitle">Включено</p>
+                    <div class="control__settings control__settings--left">
+                      <div class="light-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Дневной свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Вечерний свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Рассвет</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--warm">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_min.svg, images/icons/controls/icon_sun_min@2x.png 2x" src="images/icons/controls/icon_sun_min@1x.png" alt="Минимум"/>
+                              </div>
+                              <div class="range__line-top"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_max.svg, images/icons/controls/icon_sun_max@2x.png 2x" src="images/icons/controls/icon_sun_max@1x.png" alt="Максимум"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control control--light" data-type="LIGHT">
+                <div class="control__body">
+                  <div class="control__icon control__icon--disabled"><img class="icon icon--sun" srcset="images/icons/controls/icon_sun.svg, images/icons/controls/icon_sun@2x.png 2x" src="images/icons/controls/icon_sun@1x.png" alt="Свет"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Philips Zhirui</p>
+                    <p class="control__subtitle">Выключено</p>
+                    <div class="control__settings control__settings--left">
+                      <div class="light-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Дневной свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Вечерний свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Рассвет</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--warm">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_min.svg, images/icons/controls/icon_sun_min@2x.png 2x" src="images/icons/controls/icon_sun_min@1x.png" alt="Минимум"/>
+                              </div>
+                              <div class="range__line-top"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_max.svg, images/icons/controls/icon_sun_max@2x.png 2x" src="images/icons/controls/icon_sun_max@1x.png" alt="Максимум"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+              <div class="control control--light" data-type="LIGHT">
+                <div class="control__body">
+                  <div class="control__icon control__icon--enabled"><img class="icon icon--sun" srcset="images/icons/controls/icon_sun_2.svg, images/icons/controls/icon_sun_2@2x.png 2x" src="images/icons/controls/icon_sun_2@1x.png" alt="Свет"/>
+                  </div>
+                  <div class="control__content">
+                    <p class="control__title">Xiaomi Mi Air Purifier 2S</p>
+                    <p class="control__subtitle">Включено</p>
+                    <div class="control__settings control__settings--left">
+                      <div class="light-control">
+                        <div class="filters filters--linear">
+                          <ul class="filters-list">
+                            <li class="filters-list__item">
+                              <button class="filters__button is-active">Вручную</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Дневной свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Вечерний свет</button>
+                            </li>
+                            <li class="filters-list__item">
+                              <button class="filters__button">Рассвет</button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="range range--warm">
+                          <input class="range__native" type="range" id="range-native" name="range-native"/>
+                          <div class="range__styled">
+                            <div class="range__control" style="transform: translateX(179.4px);"></div>
+                            <div class="range__line">
+                              <div class="range__line-bottom"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_min.svg, images/icons/controls/icon_sun_min@2x.png 2x" src="images/icons/controls/icon_sun_min@1x.png" alt="Минимум"/>
+                              </div>
+                              <div class="range__line-top"><img class="icon icon--sun-min" srcset="images/icons/controls/icon_sun_max.svg, images/icons/controls/icon_sun_max@2x.png 2x" src="images/icons/controls/icon_sun_max@1x.png" alt="Максимум"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="control__manage">
+                  <button class="control__button control__button--ok">Применить</button>
+                  <button class="control__button">Закрыть</button>
+                </div>
+              </div>
+            </div>
+            <div class="controls-list__manage">
+              <button class="controls-list__scroll-button js-scroll-list arrow-left"><img class="icon icon--arrow-left" srcset="images/icons/buttons/arrow-left.svg, images/icons/buttons/arrow-left@2x.png 2x" src="images/icons/buttons/arrow-left@1x.png" alt="Назад"/>
+              </button>
+              <button class="controls-list__scroll-button js-scroll-list arrow-right is-active"><img class="icon icon--arrow-right" srcset="images/icons/buttons/arrow-right.svg, images/icons/buttons/arrow-right@2x.png 2x" src="images/icons/buttons/arrow-right@1x.png" alt="Вперёд"/>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <ul class="footer-list">
+          <li class="footer-list__item is-current"><a class="footer-list__link" href="#">Помощь</a></li>
+          <li class="footer-list__item"><a class="footer-list__link" href="#">Обратная связь</a></li>
+          <li class="footer-list__item"><a class="footer-list__link" href="#">Разработчикам</a></li>
+          <li class="footer-list__item"><a class="footer-list__link" href="#">Условия использования</a></li>
+        </ul>
+        <p class="footer__copyright">&nbsp;&copy;&nbsp;2001–2017 ООО &laquo;Яндекс&raquo;</p>
+      </footer>
+    </div>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

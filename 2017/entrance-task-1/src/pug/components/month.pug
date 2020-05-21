@@ -1,0 +1,22 @@
+- 
+  var days = {
+    1: 'Пн',
+    2: 'Вт',
+    3: 'Ср',
+    4: 'Чт',
+    5: 'Пт',
+    6: 'Сб',
+    7: 'Вс'
+  }
+
+mixin month(months)
+  each month in months
+    div&attributes({
+      class: [month.prefix ? `month--${month.prefix}` : `.month`]
+    })
+      div.month__name!= month.name
+      each day in month.days
+        .month__day.day
+          .day__date!= day.date.value
+          .day__name!= days[day.date.id]
+          +schools(day.schools, day.schedule)

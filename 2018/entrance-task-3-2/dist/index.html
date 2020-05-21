@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SmartHouse Algorythm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+</head>
+
+<body>
+	<div class="container">
+		<p><a href="data/input.json" target="_blank">Данные для проверки</a></p>
+		<form class="count">
+			<textarea class="count__input" id="data" placeholder="JSON с данными"></textarea>
+			<button class="count__button" type="submit">Рассчитать</button>
+		</form>
+		<div id="result">
+			<h2 class="result__title">Расписание</h2>
+			<pre>
+
+			</pre>
+		</div>
+	</div>
+
+	<!-- https://github.com/Microsoft/TypeScript/issues/14351#issuecomment-294081499 -->
+	<script>
+		var exports = {};
+	</script>
+	<script src="index.js"></script>
+	<script>
+		const form = document.querySelector('.count');
+		const result = document.getElementById('result');
+		const pre = result.querySelector('pre');
+
+		form.addEventListener('submit', function (e) {
+			e.preventDefault();
+
+			const data = e.target.data;
+
+			if (data.value) {
+				const schedule = SmartHouse.createSchedule(data.value);
+				
+				result.style.display = 'block';
+				pre.textContent = JSON.stringify(schedule, null, 4);
+			}
+		}, false);
+	</script>
+</body>
+
+</html>

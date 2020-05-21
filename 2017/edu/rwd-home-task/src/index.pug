@@ -1,0 +1,26 @@
+extends  ./pug/base/tmpl
+
+include ./pug/mixins/picture-list.mixin.pug
+
+//- This block will be injected to basic tmpl
+block head
+    script(src="js/libs/modernizr.js")
+    link(rel='stylesheet', href='css/styles.min.css')
+    script.
+      !(Modernizr.cssvhunit && Modernizr.cssvmaxunit && Modernizr.cssvminunit) && document.write('<script src="js/libs/vminpoly.js"><\/script>');
+      !Modernizr.objectfit && document.write('<script src="js/libs/ofi.min.js"><\/script>');
+
+//- This block will be injected to basic tmpl
+block content
+  include ./pug/components/preview
+  .wrapper
+    include ./pug/components/header
+    include ./pug/components/info
+    include ./pug/components/picture-list
+  include ./pug/components/footer
+  
+//- This block will be injected to basic tmpl
+block scripts
+  script(src="js/scripts.min.js")
+  script.
+    !Modernizr.objectfit && objectFitImages();

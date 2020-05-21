@@ -1,0 +1,16 @@
+include range/index
+include control/index
+
+mixin controls-list(controls, icons = [], buttonsClassNames = [])
+	if controls
+		.controls-list
+			.controls-list__container
+				each item, index in controls
+					+control(item, index)
+			if buttons.length > 0
+				.controls-list__manage
+					each icon, index in icons
+						button&attributes({
+							class: ['controls-list__scroll-button', 'js-scroll-list'].concat(buttonsClassNames[index])
+						})
+							+icon(...icon)
