@@ -1,6 +1,6 @@
 ## Карточница
 
-![Карточница](https://github.com/chekit/mobile-home-task/blob/master/resources/android/icon/drawable-xhdpi-icon.png?raw=true)
+![Карточница](https://github.com/chekit/yandex_shri_2017_2018/blob/master/2017/homeworks/mobile-home-task/resources/android/icon/drawable-xhdpi-icon.png?raw=true)
 
 Мини-приложения для создания карточек контактов.
 
