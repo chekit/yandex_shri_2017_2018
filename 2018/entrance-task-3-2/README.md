@@ -6,19 +6,19 @@
 
 - Запуск тестов: `npm run test`
 
-> Спека: https://github.com/chekit/entrance-task-3-2/blob/master/test/index.spec.js
+> Спека: https://github.com/chekit/yandex_shri_2017_2018/blob/master/2018/entrance-task-3-2/test/index.spec.js
 
 - Сборка кода и запуск локального сервера с примером работы: `npm run start`
 
 > Локальный сервер запустится по адресу http://localhost:8000/, в textarea необходимо вставить данные расположенные по ссылке "Данные для проверки"
 
-> Код решения: https://github.com/chekit/entrance-task-3-2/blob/master/src/index.ts
+> Код решения: https://github.com/chekit/yandex_shri_2017_2018/blob/master/2018/entrance-task-3-2/src/index.ts
 
 Для работы с алгоритмом был выбран язык TypeScript, так как он поддерживает строгую типизацию, определение интерфейсов, указание типов входных параметров функций и возвращаемых значений. За счёт перечисленных возможностей можно заранее минимизировать количество ошибок, а сам код становится более декларативным.
 
 > Песочница: http://jsbin.com/guqujor/edit?js,console
 
-> GitHub Page с тестовым примером: https://chekit.github.io/entrance-task-3-2/dist/
+> GitHub Page с тестовым примером: https://chekit.github.io/yandex_shri_2017_2018/2018/entrance-task-3-2/dist/
 
 ## Важно 
 
