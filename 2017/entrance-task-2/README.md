@@ -70,6 +70,4 @@
 
 ## Результат
 
-Исходный код: https://github.com/chekit/shri/tree/master/task2
-
-Описание библиотеки: https://chekit.github.io/shri/task2/docs/gen/
+Описание библиотеки: https://chekit.github.io/yandex_shri_2017_2018/2017/entrance-task-2/docs/gen/
