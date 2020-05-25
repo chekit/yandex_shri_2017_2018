@@ -11,6 +11,6 @@
 
 ## Решение: 
 
-Исходный код: https://github.com/chekit/shri/tree/master/task1
+Исходный код: https://github.com/chekit/yandex_shri_2017_2018/tree/master/2017/entrance-task-1/src
 
-Результат https://chekit.github.io/shri/task1/dist/
+Результат https://chekit.github.io/yandex_shri_2017_2018/2017/entrance-task-1/dist/
