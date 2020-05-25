@@ -6,7 +6,7 @@
 
 - Сборка проекта: `npm run build`
 - Cбока проекта и запуск в браузере на localhost: `npm run start`
-- GitHub pages с сборкой результата: https://chekit.github.io/entrance-task-2-2/dist/
+- GitHub pages с сборкой результата: https://chekit.github.io/yandex_shri_2017_2018/2018/entrance-task-2-2/dist/
 
 > В задании использовал личную заготовку для проектов: [Generator Basic Page](https://github.com/chekit/generator-basic-page)
 
